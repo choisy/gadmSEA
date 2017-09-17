@@ -5,7 +5,7 @@ tolerance <- .03
 countries <- c("china", "india", "indonesia", "laos", "malaysia", "philippines",
                "taiwan", "thailand", "vietnam", "myanmar", "cambodia",
                "papuanewguinea", "bhutan", "nepal", "singapore", "srilanka",
-               "pakistan")
+               "pakistan", "japan", "korea", "north korea")
 
 # ------------------------------------------------------------------------------
 
@@ -18,9 +18,11 @@ getcountry <- function(country)
 
 # retrieves the codes for the countries we want:
 countrycodes <- hash[sapply(countries, getcountry), "iso3c"]
-sea_countries <- setNames(
-  lapply(countrycodes,
-         function(x) raster::getData("GADM", path = "data-raw", country = x, level = 0)), countries)
+sea_countries <- lapply(countrycodes,
+         function(x) raster::getData("GADM", path = "data-raw", country = x, level = 0))
+
+countries <- gsub(" ", "", countries)
+names(sea_countries) <- countries
 
 # simplifying the maps:
 library(maptools) # for "thinnedSpatialPoly" (need to load it to make "rgeos" available)
