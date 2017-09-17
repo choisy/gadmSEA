@@ -7,7 +7,7 @@ countries <- c("china", "india", "indonesia", "laos", "malaysia", "philippines",
                "papuanewguinea", "bhutan", "nepal", "singapore", "srilanka",
                "pakistan", "japan", "korea", "north korea", "russia",
                "bangladesh", "afghanistan", "tajikistan", "kyrgyzstan",
-               "kazakhstan", "mongolia")
+               "kazakhstan", "mongolia", "uzbekistan")
 
 # ------------------------------------------------------------------------------
 
