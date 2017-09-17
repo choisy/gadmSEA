@@ -4,7 +4,8 @@ tolerance <- .03
 # the countries for which we want the maps:
 countries <- c("china", "india", "indonesia", "laos", "malaysia", "philippines",
                "taiwan", "thailand", "vietnam", "myanmar", "cambodia",
-               "papuanewguinea", "bhutan", "nepal")
+               "papuanewguinea", "bhutan", "nepal", "singapore", "srilanka",
+               "pakistan")
 
 # ------------------------------------------------------------------------------
 
