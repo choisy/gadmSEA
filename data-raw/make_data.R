@@ -5,7 +5,9 @@ tolerance <- .03
 countries <- c("china", "india", "indonesia", "laos", "malaysia", "philippines",
                "taiwan", "thailand", "vietnam", "myanmar", "cambodia",
                "papuanewguinea", "bhutan", "nepal", "singapore", "srilanka",
-               "pakistan", "japan", "korea", "north korea", "russia", "bangladesh")
+               "pakistan", "japan", "korea", "north korea", "russia",
+               "bangladesh", "afghanistan", "tajikistan", "kyrgyzstan",
+               "kazakhstan", "mongolia")
 
 # ------------------------------------------------------------------------------
 
