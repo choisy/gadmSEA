@@ -11,8 +11,7 @@ RoxygenNote: 6.0.1
 Suggests:
     dplyr,
     purrr,
-    marc
-Imports:
+    marc,
     sp
 Depends:
   R (>= 2.10)
