@@ -7,7 +7,7 @@ Authors@R: person("Marc", "Choisy",
                   role = c("aut", "cre", "cph"),
                   comment = c(ORCID = "https://orcid.org/0000-0002-5187-6390"))
 Description: Contains the country maps of Southeast Asia from GADM.
-License: MIT
+License: MIT + file LICENSE
 LazyData: TRUE
 RoxygenNote: 6.0.1
 Suggests:
