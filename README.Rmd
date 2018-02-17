@@ -27,7 +27,8 @@ basically simply provides the polygons of the following 28 countries**:
 Afghanistan, Bangladesh, Bhutan, Cambodia, China, India, Japan, Indonesia,
 Japan, Kazakhstan, Korea, Kyrgystan, Lao PDR, Malaysia, Mongolia, Myanmar,
 Nepal, North Korea, Paskistan, Papua New Guinea, the Philippines, Russia, 
-Singapore, Sri Lanka, Taiwan, Tajikistan, Thailand, Uzbekistan and Vietnam.
+Singapore, Sri Lanka, Taiwan, Tajikistan, Thailand, Uzbekistan and Vietnam. 
+These polygons come from [GADM](http://www.gadm.org).
 
 
 ## Installation
