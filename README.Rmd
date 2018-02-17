@@ -1,0 +1,83 @@
+---
+output: github_document
+editor_options: 
+  chunk_output_type: console
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, echo = FALSE}
+knitr::knit_hooks$set(margin = function(before, options, envir) {
+  if (before) par(mgp = c(1.5, .5, 0), bty = "n", plt = c(.105, .97, .13, .97))
+  else NULL
+})
+
+knitr::opts_chunk$set(margin = TRUE, prompt = TRUE, comment = "#>",
+                      collapse = TRUE, cache = FALSE, autodep = TRUE,
+                      dev.args = list(pointsize = 11), fig.height = 3.5,
+                      fig.width = 4.24725, fig.retina = 2,
+                      fig.align = "center", fig.path = "README-")
+```
+
+# gadmSEA
+
+The goal of `gadmSEA` is to ease the drawing of location maps of any set of
+countries from Southeast Asia. **This package contains no function and 
+basically simply provides the polygons of the following 28 countries**:
+Afghanistan, Bangladesh, Bhutan, Cambodia, China, India, Japan, Indonesia,
+Japan, Kazakhstan, Korea, Kyrgystan, Lao PDR, Malaysia, Mongolia, Myanmar,
+Nepal, North Korea, Paskistan, Papua New Guinea, the Philippines, Russia, 
+Singapore, Sri Lanka, Taiwan, Tajikistan, Thailand, Uzbekistan and Vietnam.
+
+
+## Installation
+
+You can install `gadmSEA` from github with:
+
+```{r gh-installation, eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("choisy/gadmSEA")
+```
+
+
+## Usage
+
+The list of available countries can be seen with the `mcutils::dataset`
+function that returns the list of the names of the data sets available in a 
+given package.
+
+```{r}
+mcutils::datasets("gadmSEA")
+```
+
+The package `mcutils` can be installed from GitHub:
+
+```{r eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("choisy/mcutils")
+```
+
+To load a specific country, we can either access directly to the data set:
+
+```{r}
+vietnam <- gadmSEA::vietnam
+```
+
+or use the `utils::data` function:
+
+```{r}
+data(vietnam, package = "gadmSEA")
+```
+
+These polygons are of class `SpatialPolygonsDataFrame`:
+
+```{r}
+class(vietnam)
+```
+
+and can be plotted with the `sp::plot` corresponding method:
+
+```{r}
+sp::plot(vietnam, col = "grey")
+```
+
