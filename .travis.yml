@@ -6,4 +6,4 @@ cache: packages
 
 env:
   global:
-_R_CHECK_FORCE_SUGGESTS_=FALSE
+  - _R_CHECK_FORCE_SUGGESTS_=FALSE
