@@ -3,6 +3,8 @@
 gadmSEA
 =======
 
+[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/gadmSEA)](https://cran.r-project.org/package=gadmSEA)
+
 The goal of `gadmSEA` is to ease the drawing of location maps of any set of countries from Southeast Asia. **This package contains no function and basically simply provides the polygons of the following 28 countries**: Afghanistan, Bangladesh, Bhutan, Cambodia, China, India, Japan, Indonesia, Japan, Kazakhstan, Korea, Kyrgystan, Lao PDR, Malaysia, Mongolia, Myanmar, Nepal, North Korea, Paskistan, Papua New Guinea, the Philippines, Russia, Singapore, Sri Lanka, Taiwan, Tajikistan, Thailand, Uzbekistan and Vietnam. These polygons come from [GADM](http://www.gadm.org).
 
 Installation

@@ -25,7 +25,7 @@ yellow <- rgb2(253, 252, 235)
 ### the map:
 plot(vietnam, xlab = "longitude (decimal degree)", border = NA,
               ylab = "latitude (decimal degree)", bg = blue)
-marc::datasets("gadmSEA") \%>\%
+mcutils::datasets("gadmSEA") \%>\%
   as.data.frame(stringsAsFactors = FALSE) \%>\%
   setNames("country") \%>\%
   mutate(col = ifelse(country == "vietnam", yellow, grey)) \%$\%
@@ -49,7 +49,7 @@ plot(vietnam, xlab = "longitude (decimal degree)", border = NA,
 ctr <- c("vietnam", "philippines", "cambodia", "japan", "china", "thailand",
          "singapore", "indonesia", "malaysia", "taiwan", "bangladesh", "laos",
          "india", "nepal")
-marc::datasets("gadmSEA") \%>\%
+mcutils::datasets("gadmSEA") \%>\%
   as.data.frame(stringsAsFactors = FALSE) \%>\%
   setNames("country") \%>\%
   dplyr::mutate(col = ifelse(country \%in\% ctr, yellow, grey)) \%$\%
