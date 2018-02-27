@@ -21,6 +21,8 @@ knitr::opts_chunk$set(margin = TRUE, prompt = TRUE, comment = "#>",
 
 # gadmSEA
 
+[![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/gadmSEA)](https://cran.r-project.org/package=gadmSEA)
+
 The goal of `gadmSEA` is to ease the drawing of location maps of any set of
 countries from Southeast Asia. **This package contains no function and 
 basically simply provides the polygons of the following 28 countries**:
