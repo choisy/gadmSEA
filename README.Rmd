@@ -21,6 +21,7 @@ knitr::opts_chunk$set(margin = TRUE, prompt = TRUE, comment = "#>",
 
 # gadmSEA
 
+[![Travis-CI Build Status](https://travis-ci.org/choisy/gadmSEA.svg?branch=master)](https://travis-ci.org/choisy/gadmSEA)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/gadmSEA)](https://cran.r-project.org/package=gadmSEA)
 
 The goal of `gadmSEA` is to ease the drawing of location maps of any set of
